@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodologia M.E.A. - Framework de Processo para QA</title>
+    <meta name="description" content="Metodologia M.E.A. (Modelagem, Execução, Automação) - Framework gratuito para gerenciamento ágil de testes no Jira">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">M.E.A.</span>
+                <span class="logo-subtitle">Framework</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#inicio" class="nav-link">Início</a></li>
+                <li><a href="#historia" class="nav-link">História</a></li>
+                <li><a href="#metodologia" class="nav-link">Metodologia</a></li>
+                <li><a href="#beneficios" class="nav-link">Benefícios</a></li>
+                <li><a href="#contato" class="nav-link">Contato</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-rocket"></i>
+                    <span>Framework de Processo</span>
+                </div>
+                <h1 class="hero-title">
+                    Metodologia <span class="gradient-text">M.E.A.</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Modelagem, Execução e Automação de Testes
+                </p>
+                <p class="hero-description">
+                    Um framework gratuito e open-source para gerenciamento ágil de QA diretamente no Jira, 
+                    eliminando custos de ferramentas pagas e otimizando o fluxo de trabalho.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#metodologia" class="btn btn-primary">
+                        <i class="fas fa-play"></i>
+                        Conhecer Metodologia
+                    </a>
+                    <a href="https://github.com/Bella5900g/Metodologia_M.E.A." class="btn btn-secondary" target="_blank">
+                        <i class="fab fa-github"></i>
+                        Ver no GitHub
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-cards">
+                    <div class="card epic-card">
+                        <div class="card-icon">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3>Épico M.E.A.</h3>
+                            <p>Plano de Teste</p>
+                        </div>
+                    </div>
+                    <div class="card mct-card">
+                        <div class="card-icon">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3>MCT</h3>
+                            <p>Modelagem</p>
+                        </div>
+                    </div>
+                    <div class="card ect-card">
+                        <div class="card-icon">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3>ECT</h3>
+                            <p>Execução</p>
+                        </div>
+                    </div>
+                    <div class="card act-card">
+                        <div class="card-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3>ACT</h3>
+                            <p>Automação</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- História Section -->
+    <section id="historia" class="historia">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">A Gênese do M.E.A.</h2>
+                <p class="section-subtitle">Da Necessidade à Inovação em QA</p>
+            </div>
+            
+            <div class="historia-content">
+                <div class="historia-text">
+                    <div class="historia-card">
+                        <div class="card-header">
+                            <div class="author-info">
+                                <img src="img/isabella-profile.jpg" alt="Isabella Vieira Barbosa" class="author-photo">
+                                <div class="author-details">
+                                    <h3>Isabella Vieira Barbosa</h3>
+                                    <p>QA Chapter Lead | Analista de QA Sênior</p>
+                                    <div class="author-badges">
+                                        <span class="badge">ISTQB CTFL</span>
+                                        <span class="badge">ASTFCT</span>
+                                        <span class="badge">10+ Anos</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p class="historia-intro">
+                                Toda inovação nasce de uma necessidade real. Para mim, Isabella Vieira Barbosa, 
+                                essa jornada começou durante meu período na <strong>Pay4Fun Instituição de Pagamento S.A.</strong>, 
+                                onde atuei de 2022 a 2025.
+                            </p>
+                            
+                            <div class="challenge-section">
+                                <h4><i class="fas fa-exclamation-triangle"></i> Os Desafios Identificados</h4>
+                                <div class="challenges-grid">
+                                    <div class="challenge-card financial">
+                                        <div class="challenge-icon">
+                                            <i class="fas fa-dollar-sign"></i>
+                                        </div>
+                                        <h5>Desafio Financeiro</h5>
+                                        <p>Ferramentas como Zephyr Scale geravam custos significativos de licenciamento anual por usuário.</p>
+                                    </div>
+                                    <div class="challenge-card process">
+                                        <div class="challenge-icon">
+                                            <i class="fas fa-clock"></i>
+                                        </div>
+                                        <h5>Desafio de Processo</h5>
+                                        <p>QA só iniciava o planejamento após a entrega do desenvolvimento, criando gargalos no final da sprint.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="solution-section">
+                                <h4><i class="fas fa-lightbulb"></i> A Solução Inovadora</h4>
+                                <blockquote class="solution-quote">
+                                    "E se pudéssemos construir um sistema de gerenciamento de testes completo, 
+                                    com 100% de rastreabilidade, usando apenas os recursos nativos que o Jira já nos oferece?"
+                                </blockquote>
+                                
+                                <div class="objectives">
+                                    <div class="objective">
+                                        <div class="objective-icon">
+                                            <i class="fas fa-piggy-bank"></i>
+                                        </div>
+                                        <div class="objective-content">
+                                            <h5>Objetivo Financeiro</h5>
+                                            <p>Eliminar 100% do custo com licenças, utilizando apenas Épicos, Tarefas e Sub-tarefas nativas do Jira.</p>
+                                        </div>
+                                    </div>
+                                    <div class="objective">
+                                        <div class="objective-icon">
+                                            <i class="fas fa-sync-alt"></i>
+                                        </div>
+                                        <div class="objective-content">
+                                            <h5>Objetivo Operacional</h5>
+                                            <p>Implementar fluxo verdadeiramente ágil, antecipando a criação dos casos de teste para a fase de refinamento.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="impact-section">
+                                <h4><i class="fas fa-chart-line"></i> O Impacto Transformador</h4>
+                                <div class="impact-stats">
+                                    <div class="stat">
+                                        <div class="stat-number">100%</div>
+                                        <div class="stat-label">Redução de Custos</div>
+                                    </div>
+                                    <div class="stat">
+                                        <div class="stat-number">∞</div>
+                                        <div class="stat-label">Rastreabilidade</div>
+                                    </div>
+                                    <div class="stat">
+                                        <div class="stat-number">⚡</div>
+                                        <div class="stat-label">Fluxo Ágil</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Metodologia Section -->
+    <section id="metodologia" class="metodologia">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">A Estrutura do M.E.A.</h2>
+                <p class="section-subtitle">Framework Metodológico Simples e Poderoso</p>
+            </div>
+
+            <div class="metodologia-content">
+                <div class="hierarchy-visual">
+                    <div class="hierarchy-container">
+                        <div class="epic-level">
+                            <div class="epic-card">
+                                <div class="card-header">
+                                    <i class="fas fa-layer-group"></i>
+                                    <h3>Épico M.E.A.</h3>
+                                </div>
+                                <div class="card-body">
+                                    <p>Plano de Teste da Funcionalidade</p>
+                                    <span class="card-badge">Contêiner Principal</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="connection-line"></div>
+                        
+                        <div class="mct-level">
+                            <div class="mct-card">
+                                <div class="card-header">
+                                    <i class="fas fa-tasks"></i>
+                                    <h3>MCT</h3>
+                                </div>
+                                <div class="card-body">
+                                    <p>Modelagem de Casos de Teste</p>
+                                    <span class="card-badge">Task</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="subtasks-level">
+                            <div class="connection-line horizontal"></div>
+                            <div class="subtasks-container">
+                                <div class="ect-card">
+                                    <div class="card-header">
+                                        <i class="fas fa-play-circle"></i>
+                                        <h3>ECT</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <p>Execução de Casos de Teste</p>
+                                        <span class="card-badge">Sub-task</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="act-card">
+                                    <div class="card-header">
+                                        <i class="fas fa-robot"></i>
+                                        <h3>ACT</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <p>Automação de Casos de Teste</p>
+                                        <span class="card-badge">Sub-task</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="workflow-phases">
+                    <h3>As 3 Fases do Processo</h3>
+                    <div class="phases-grid">
+                        <div class="phase-card">
+                            <div class="phase-number">1</div>
+                            <div class="phase-content">
+                                <h4>Refinamento Técnico</h4>
+                                <p>QA trabalha em paralelo com o desenvolvimento, criando e modelando os casos de teste durante o refinamento.</p>
+                                <ul>
+                                    <li>Criação do MCT</li>
+                                    <li>Modelagem com Gherkin</li>
+                                    <li>Pronto para execução</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="phase-card">
+                            <div class="phase-number">2</div>
+                            <div class="phase-content">
+                                <h4>Execução</h4>
+                                <p>Quando o DEV entrega, o QA executa o roteiro já pronto, anexando evidências e resultados.</p>
+                                <ul>
+                                    <li>Execução do ECT</li>
+                                    <li>Anexo de evidências</li>
+                                    <li>Registro de resultados</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="phase-card">
+                            <div class="phase-number">3</div>
+                            <div class="phase-content">
+                                <h4>Automação</h4>
+                                <p>Baseado no script Gherkin do MCT, o QA desenvolve a automação e integra na pipeline.</p>
+                                <ul>
+                                    <li>Desenvolvimento do ACT</li>
+                                    <li>Integração na pipeline</li>
+                                    <li>Conclusão do ciclo</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefícios Section -->
+    <section id="beneficios" class="beneficios">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Principais Benefícios</h2>
+                <p class="section-subtitle">Por que escolher a Metodologia M.E.A.</p>
+            </div>
+
+            <div class="beneficios-grid">
+                <div class="beneficio-card">
+                    <div class="beneficio-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3>Custo Zero</h3>
+                    <p>Utiliza 100% de recursos nativos do Jira, eliminando completamente os custos de licenças de ferramentas externas.</p>
+                </div>
+
+                <div class="beneficio-card">
+                    <div class="beneficio-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Rastreabilidade Total</h3>
+                    <p>Acompanhe o status completo do teste (Modelagem, Execução, Automação) diretamente pelo Épico principal.</p>
+                </div>
+
+                <div class="beneficio-card">
+                    <div class="beneficio-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3>Elimina Gargalos</h3>
+                    <p>A Modelagem é feita em paralelo com o desenvolvimento, não depois. QA se torna proativo, não reativo.</p>
+                </div>
+
+                <div class="beneficio-card">
+                    <div class="beneficio-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Gera Métricas</h3>
+                    <p>Dashboards nativos do Jira para medir cobertura de testes, débitos de automação e progresso da equipe.</p>
+                </div>
+
+                <div class="beneficio-card">
+                    <div class="beneficio-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Fácil de Adotar</h3>
+                    <p>Não requer instalação de plugins, apenas configuração de tipos de issue e fluxos de trabalho.</p>
+                </div>
+
+                <div class="beneficio-card">
+                    <div class="beneficio-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Colaboração Aprimorada</h3>
+                    <p>QA se torna parceiro estratégico desde o início do ciclo de desenvolvimento, não apenas no final.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section id="contato" class="contato">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Conecte-se</h2>
+                <p class="section-subtitle">Vamos conversar sobre QA e inovação</p>
+            </div>
+
+            <div class="contato-content">
+                <div class="contato-info">
+                    <div class="contato-card">
+                        <div class="contato-header">
+                            <img src="img/isabella-profile.jpg" alt="Isabella Vieira Barbosa" class="contato-photo">
+                            <div class="contato-details">
+                                <h3>Isabella Vieira Barbosa</h3>
+                                <p>QA Chapter Lead | Analista de QA Sênior</p>
+                                <div class="contato-badges">
+                                    <span class="badge">ISTQB CTFL</span>
+                                    <span class="badge">ASTFCT</span>
+                                    <span class="badge">Meta</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contato-stats">
+                            <div class="stat">
+                                <div class="stat-number">70%</div>
+                                <div class="stat-label">Redução de Bugs</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number">R$ 1.5M</div>
+                                <div class="stat-label">Economia Gerada</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number">99.9%</div>
+                                <div class="stat-label">Uptime</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contato-links">
+                    <a href="https://www.linkedin.com/in/isabellavieiraqa/" class="contato-link linkedin" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                        <div class="link-content">
+                            <h4>LinkedIn</h4>
+                            <p>Conecte-se profissionalmente</p>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/Bella5900g" class="contato-link github" target="_blank">
+                        <i class="fab fa-github"></i>
+                        <div class="link-content">
+                            <h4>GitHub</h4>
+                            <p>Veja meus projetos e contribuições</p>
+                        </div>
+                    </a>
+
+                    <a href="https://bella5900g.github.io/isabella-vieira-portfolio/" class="contato-link portfolio" target="_blank">
+                        <i class="fas fa-globe"></i>
+                        <div class="link-content">
+                            <h4>Portfolio</h4>
+                            <p>Conheça meu trabalho completo</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <span class="logo-text">M.E.A.</span>
+                        <span class="logo-subtitle">Framework</span>
+                    </div>
+                    <p>Metodologia M.E.A. - Framework de Processo para QA</p>
+                </div>
+                <div class="footer-right">
+                    <p>&copy; 2025 Isabella Vieira Barbosa. Licenciado sob MIT.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
