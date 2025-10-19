@@ -731,9 +731,9 @@ section {
     left: 50%;
     transform: translateX(-50%);
     width: 2px;
-    height: 60px;
+    height: 40px;
     background: var(--gradient-primary);
-    z-index: 1;
+    z-index: 0;
 }
 
 .connection-line.horizontal {
@@ -756,6 +756,8 @@ section {
     min-width: 200px;
     text-align: center;
     transition: var(--transition-normal);
+    position: relative;
+    z-index: 2;
 }
 
 .epic-card:hover,

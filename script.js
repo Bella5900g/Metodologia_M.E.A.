@@ -135,44 +135,11 @@ function initMobileMenu() {
     }
 }
 
-// Efeito de digitação no título
+// Efeito de digitação no título (desabilitado para manter o design)
 function initTypingEffect() {
-    const titleElement = document.querySelector('.hero-title');
-    if (!titleElement) return;
-    
-    const originalText = titleElement.textContent;
-    const words = originalText.split(' ');
-    let currentWordIndex = 0;
-    let currentCharIndex = 0;
-    let isDeleting = false;
-    
-    function typeWriter() {
-        const currentWord = words[currentWordIndex];
-        
-        if (isDeleting) {
-            titleElement.textContent = currentWord.substring(0, currentCharIndex - 1);
-            currentCharIndex--;
-        } else {
-            titleElement.textContent = currentWord.substring(0, currentCharIndex + 1);
-            currentCharIndex++;
-        }
-        
-        let typeSpeed = isDeleting ? 50 : 100;
-        
-        if (!isDeleting && currentCharIndex === currentWord.length) {
-            typeSpeed = 2000; // Pausa no final da palavra
-            isDeleting = true;
-        } else if (isDeleting && currentCharIndex === 0) {
-            isDeleting = false;
-            currentWordIndex = (currentWordIndex + 1) % words.length;
-            typeSpeed = 500; // Pausa antes da próxima palavra
-        }
-        
-        setTimeout(typeWriter, typeSpeed);
-    }
-    
-    // Iniciar efeito após um delay
-    setTimeout(typeWriter, 1000);
+    // Efeito desabilitado para manter o design original do título
+    // O título "Modelagem, Execução e Automação de Testes" mantém seu estilo
+    return;
 }
 
 // Contadores animados
