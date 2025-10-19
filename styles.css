@@ -334,57 +334,105 @@ body {
 
 /* Hero Visual */
 .hero-visual {
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 500px;
 }
 
-.floating-cards {
-    position: relative;
+.hero-cards-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: var(--spacing-6);
+    max-width: 500px;
     width: 100%;
-    height: 100%;
 }
 
-.card {
-    position: absolute;
+.hero-card {
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
     border-radius: var(--border-radius-xl);
-    padding: var(--spacing-5);
+    padding: var(--spacing-6);
     box-shadow: var(--shadow-xl);
     border: 1px solid rgba(255, 255, 255, 0.3);
     transition: var(--transition-normal);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: var(--spacing-3);
     animation: float 6s ease-in-out infinite;
-    width: 180px;
-    height: auto;
 }
 
-.card:hover {
+.hero-card:hover {
     transform: translateY(-10px) scale(1.05);
     box-shadow: var(--shadow-2xl);
 }
 
-.epic-card {
-    top: 40px;
-    left: 60px;
+.epic-hero-card {
+    grid-column: 1 / -1;
+    grid-row: 1;
     animation-delay: 0s;
 }
 
-.mct-card {
-    top: 160px;
-    right: 100px;
+.mct-hero-card {
+    grid-column: 1;
+    grid-row: 2;
     animation-delay: 1.5s;
 }
 
-.ect-card {
-    bottom: 160px;
-    left: 50px;
+.ect-hero-card {
+    grid-column: 2;
+    grid-row: 2;
     animation-delay: 3s;
 }
 
-.act-card {
-    bottom: 60px;
-    right: 60px;
+.act-hero-card {
+    grid-column: 1 / -1;
+    grid-row: 3;
     animation-delay: 4.5s;
+}
+
+.hero-card-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: var(--border-radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--font-size-xl);
+    color: var(--white);
+}
+
+.epic-hero-card .hero-card-icon {
+    background: var(--gradient-primary);
+}
+
+.mct-hero-card .hero-card-icon {
+    background: var(--gradient-secondary);
+}
+
+.ect-hero-card .hero-card-icon {
+    background: var(--gradient-accent);
+}
+
+.act-hero-card .hero-card-icon {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+}
+
+.hero-card-content h3 {
+    font-size: var(--font-size-lg);
+    font-weight: 700;
+    color: var(--gray-800);
+    margin: 0;
+}
+
+.hero-card-content p {
+    font-size: var(--font-size-sm);
+    color: var(--gray-600);
+    margin: 0;
+    font-weight: 500;
 }
 
 .card-icon {
@@ -1143,6 +1191,37 @@ section {
     
     .hero-visual {
         height: 400px;
+    }
+    
+    .hero-cards-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        gap: var(--spacing-4);
+        max-width: 300px;
+    }
+    
+    .epic-hero-card {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    
+    .mct-hero-card {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    
+    .ect-hero-card {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    
+    .act-hero-card {
+        grid-column: 1;
+        grid-row: 4;
+    }
+    
+    .hero-card {
+        padding: var(--spacing-4);
     }
     
     .challenges-grid,
