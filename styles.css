@@ -712,40 +712,42 @@ section {
     border: 1px solid var(--gray-200);
 }
 
-.hierarchy-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: var(--spacing-6);
+.hierarchy-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: var(--spacing-8);
     max-width: 800px;
     margin: 0 auto;
+    padding: var(--spacing-4);
 }
 
-.hierarchy-row {
+.epic-item {
+    grid-column: 1 / -1;
+    grid-row: 1;
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 100%;
 }
 
-.epic-row {
-    margin-bottom: var(--spacing-4);
+.mct-item {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
 }
 
-.mct-row {
-    margin-bottom: var(--spacing-4);
+.ect-item {
+    grid-column: 1;
+    grid-row: 3;
+    display: flex;
+    justify-content: center;
 }
 
-.subtasks-row {
-    gap: var(--spacing-12);
-    flex-wrap: wrap;
-}
-
-.connection-line-vertical {
-    width: 2px;
-    height: 40px;
-    background: var(--gradient-primary);
-    margin: var(--spacing-2) 0;
+.act-item {
+    grid-column: 2;
+    grid-row: 3;
+    display: flex;
+    justify-content: center;
 }
 
 .epic-card,
@@ -757,10 +759,14 @@ section {
     padding: var(--spacing-6);
     box-shadow: var(--shadow-lg);
     border: 1px solid var(--gray-200);
-    min-width: 200px;
+    width: 100%;
+    max-width: 300px;
     text-align: center;
     transition: var(--transition-normal);
-    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-4);
 }
 
 .epic-card:hover,
@@ -771,50 +777,44 @@ section {
     box-shadow: var(--shadow-xl);
 }
 
-.card-header {
+.card-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: var(--border-radius-lg);
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: var(--spacing-3);
-    margin-bottom: var(--spacing-4);
-    padding: 0;
-    background: none;
-    color: inherit;
+    font-size: var(--font-size-2xl);
+    color: var(--white);
 }
 
-.card-header i {
+.epic-card .card-icon {
+    background: var(--gradient-primary);
+}
+
+.mct-card .card-icon {
+    background: var(--gradient-secondary);
+}
+
+.ect-card .card-icon {
+    background: var(--gradient-accent);
+}
+
+.act-card .card-icon {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+}
+
+.card-content h3 {
     font-size: var(--font-size-xl);
-}
-
-.epic-card .card-header i {
-    color: var(--primary-color);
-}
-
-.mct-card .card-header i {
-    color: var(--secondary-color);
-}
-
-.ect-card .card-header i {
-    color: var(--accent-color);
-}
-
-.act-card .card-header i {
-    color: var(--success-color);
-}
-
-.card-header h3 {
-    font-size: var(--font-size-lg);
     font-weight: 700;
     color: var(--gray-900);
-}
-
-.card-body {
-    padding: 0;
-}
-
-.card-body p {
-    color: var(--gray-600);
     margin-bottom: var(--spacing-2);
+}
+
+.card-content p {
+    color: var(--gray-600);
+    margin-bottom: var(--spacing-3);
+    line-height: 1.5;
 }
 
 .card-badge {
@@ -1210,13 +1210,30 @@ section {
         grid-template-columns: 1fr;
     }
     
-    .subtasks-row {
-        flex-direction: column;
+    .hierarchy-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
         gap: var(--spacing-6);
     }
     
-    .hierarchy-container {
-        gap: var(--spacing-4);
+    .epic-item {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    
+    .mct-item {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    
+    .ect-item {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    
+    .act-item {
+        grid-column: 1;
+        grid-row: 4;
     }
     
     .footer-content {
