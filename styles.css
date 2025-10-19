@@ -341,11 +341,10 @@ body {
 }
 
 .hero-cards-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: var(--spacing-6);
-    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+    max-width: 400px;
     width: 100%;
 }
 
@@ -353,16 +352,16 @@ body {
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
     border-radius: var(--border-radius-xl);
-    padding: var(--spacing-6);
+    padding: var(--spacing-5);
     box-shadow: var(--shadow-xl);
     border: 1px solid rgba(255, 255, 255, 0.3);
     transition: var(--transition-normal);
     display: flex;
-    flex-direction: column;
     align-items: center;
-    text-align: center;
-    gap: var(--spacing-3);
+    text-align: left;
+    gap: var(--spacing-4);
     animation: float 6s ease-in-out infinite;
+    min-height: 80px;
 }
 
 .hero-card:hover {
@@ -371,38 +370,31 @@ body {
 }
 
 .epic-hero-card {
-    grid-column: 1 / -1;
-    grid-row: 1;
     animation-delay: 0s;
 }
 
 .mct-hero-card {
-    grid-column: 1;
-    grid-row: 2;
     animation-delay: 1.5s;
 }
 
 .ect-hero-card {
-    grid-column: 2;
-    grid-row: 2;
     animation-delay: 3s;
 }
 
 .act-hero-card {
-    grid-column: 1 / -1;
-    grid-row: 3;
     animation-delay: 4.5s;
 }
 
 .hero-card-icon {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     border-radius: var(--border-radius-lg);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: var(--font-size-xl);
+    font-size: var(--font-size-2xl);
     color: var(--white);
+    flex-shrink: 0;
 }
 
 .epic-hero-card .hero-card-icon {
@@ -422,14 +414,14 @@ body {
 }
 
 .hero-card-content h3 {
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-xl);
     font-weight: 700;
     color: var(--gray-800);
-    margin: 0;
+    margin: 0 0 var(--spacing-1) 0;
 }
 
 .hero-card-content p {
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-base);
     color: var(--gray-600);
     margin: 0;
     font-weight: 500;
@@ -1194,34 +1186,27 @@ section {
     }
     
     .hero-cards-grid {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto auto;
-        gap: var(--spacing-4);
-        max-width: 300px;
-    }
-    
-    .epic-hero-card {
-        grid-column: 1;
-        grid-row: 1;
-    }
-    
-    .mct-hero-card {
-        grid-column: 1;
-        grid-row: 2;
-    }
-    
-    .ect-hero-card {
-        grid-column: 1;
-        grid-row: 3;
-    }
-    
-    .act-hero-card {
-        grid-column: 1;
-        grid-row: 4;
+        max-width: 350px;
+        gap: var(--spacing-3);
     }
     
     .hero-card {
         padding: var(--spacing-4);
+        min-height: 70px;
+    }
+    
+    .hero-card-icon {
+        width: 50px;
+        height: 50px;
+        font-size: var(--font-size-xl);
+    }
+    
+    .hero-card-content h3 {
+        font-size: var(--font-size-lg);
+    }
+    
+    .hero-card-content p {
+        font-size: var(--font-size-sm);
     }
     
     .challenges-grid,
