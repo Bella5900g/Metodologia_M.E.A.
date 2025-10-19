@@ -62,35 +62,6 @@ Este repositório também inclui uma página web moderna e interativa que explic
 - **Conteúdo:** História completa da metodologia, estrutura visual e benefícios
 - **Tecnologias:** HTML5, CSS3, JavaScript vanilla
 
-### Como Hospedar no GitHub Pages
-
-1. **Ative o GitHub Pages:**
-   - Vá para Settings > Pages
-   - Selecione "Deploy from a branch"
-   - Escolha a branch "main" e pasta "/ (root)"
-
-2. **Adicione sua foto:**
-   - Coloque sua foto de perfil na pasta `img/`
-   - Renomeie para `isabella-profile.jpg`
-
-3. **Acesse sua página:**
-   - URL será: `https://seu-usuario.github.io/Metodologia_M.E.A./`
-
-## 📁 Estrutura do Projeto
-
-```
-Metodologia_M.E.A./
-├── README.md              # Documentação principal
-├── LICENSE                # Licença MIT
-├── SETUP.md              # Guia de configuração
-├── WORKFLOW.md           # Fluxo de trabalho
-├── TEMPLATES.md          # Modelos de descrição
-├── index.html            # Página web principal
-├── styles.css            # Estilos CSS
-├── script.js             # JavaScript interativo
-└── img/                  # Pasta de imagens
-    └── README.md         # Instruções para imagens
-```
 
 ## Licença
 

@@ -199,7 +199,7 @@ function initCounters() {
                 if (isPercentage) {
                     counter.textContent = displayValue + '%';
                 } else if (isCurrency) {
-                    counter.textContent = 'R$ ' + displayValue.toLocaleString() + 'M';
+                    counter.textContent = displayValue + '%';
                 } else {
                     counter.textContent = displayValue;
                 }

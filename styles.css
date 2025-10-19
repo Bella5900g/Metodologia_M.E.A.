@@ -440,12 +440,12 @@ body {
 
 /* Section Styles */
 section {
-    padding: var(--spacing-24) 0;
+    padding: var(--spacing-20) 0;
 }
 
 .section-header {
     text-align: center;
-    margin-bottom: var(--spacing-16);
+    margin-bottom: var(--spacing-12);
 }
 
 .section-title {
@@ -471,7 +471,7 @@ section {
 }
 
 .historia-content {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -531,7 +531,7 @@ section {
 }
 
 .card-body {
-    padding: var(--spacing-8);
+    padding: var(--spacing-6);
 }
 
 .historia-intro {
@@ -544,7 +544,7 @@ section {
 .challenge-section,
 .solution-section,
 .impact-section {
-    margin-bottom: var(--spacing-8);
+    margin-bottom: var(--spacing-6);
 }
 
 .challenge-section h4,
@@ -702,7 +702,7 @@ section {
 /* Metodologia Section */
 .metodologia-content {
     display: grid;
-    gap: var(--spacing-16);
+    gap: var(--spacing-12);
 }
 
 .hierarchy-visual {
@@ -830,7 +830,7 @@ section {
 }
 
 .workflow-phases {
-    margin-top: var(--spacing-16);
+    margin-top: var(--spacing-12);
 }
 
 .workflow-phases h3 {
@@ -988,7 +988,7 @@ section {
 .contato-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: var(--spacing-16);
+    gap: var(--spacing-12);
     align-items: start;
 }
 
