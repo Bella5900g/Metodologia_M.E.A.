@@ -349,11 +349,13 @@ body {
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
     border-radius: var(--border-radius-xl);
-    padding: var(--spacing-6);
+    padding: var(--spacing-5);
     box-shadow: var(--shadow-xl);
     border: 1px solid rgba(255, 255, 255, 0.3);
     transition: var(--transition-normal);
     animation: float 6s ease-in-out infinite;
+    width: 180px;
+    height: auto;
 }
 
 .card:hover {
@@ -362,26 +364,26 @@ body {
 }
 
 .epic-card {
-    top: 20px;
-    left: 50px;
+    top: 40px;
+    left: 60px;
     animation-delay: 0s;
 }
 
 .mct-card {
-    top: 120px;
-    right: 80px;
+    top: 160px;
+    right: 100px;
     animation-delay: 1.5s;
 }
 
 .ect-card {
-    bottom: 120px;
-    left: 30px;
+    bottom: 160px;
+    left: 50px;
     animation-delay: 3s;
 }
 
 .act-card {
-    bottom: 40px;
-    right: 40px;
+    bottom: 60px;
+    right: 60px;
     animation-delay: 4.5s;
 }
 
@@ -1187,23 +1189,23 @@ section {
     }
     
     .epic-card {
-        top: 10px;
-        left: 20px;
+        top: 20px;
+        left: 30px;
     }
     
     .mct-card {
-        top: 80px;
-        right: 40px;
+        top: 120px;
+        right: 60px;
     }
     
     .ect-card {
-        bottom: 80px;
-        left: 10px;
+        bottom: 120px;
+        left: 20px;
     }
     
     .act-card {
-        bottom: 20px;
-        right: 20px;
+        bottom: 40px;
+        right: 30px;
     }
     
     .beneficios-grid {
