@@ -707,7 +707,7 @@ section {
 
 .hierarchy-visual {
     background: var(--gray-50);
-    padding: var(--spacing-12);
+    padding: var(--spacing-16);
     border-radius: var(--border-radius-2xl);
     border: 1px solid var(--gray-200);
 }
@@ -718,12 +718,22 @@ section {
     margin: 0 auto;
 }
 
-.epic-level,
-.mct-level,
-.subtasks-level {
+.epic-level {
     display: flex;
     justify-content: center;
     margin-bottom: var(--spacing-8);
+}
+
+.mct-level {
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--spacing-8);
+}
+
+.subtasks-level {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-12);
 }
 
 .connection-line {
@@ -731,17 +741,13 @@ section {
     left: 50%;
     transform: translateX(-50%);
     width: 2px;
-    height: 40px;
+    height: 30px;
     background: var(--gradient-primary);
     z-index: 0;
 }
 
 .connection-line.horizontal {
-    width: 200px;
-    height: 2px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: none;
 }
 
 .epic-card,
@@ -828,7 +834,9 @@ section {
 
 .subtasks-container {
     display: flex;
-    gap: var(--spacing-8);
+    gap: var(--spacing-12);
+    justify-content: center;
+    align-items: center;
 }
 
 .workflow-phases {
@@ -1213,11 +1221,11 @@ section {
     
     .subtasks-container {
         flex-direction: column;
-        gap: var(--spacing-4);
+        gap: var(--spacing-6);
     }
     
-    .connection-line.horizontal {
-        display: none;
+    .subtasks-level {
+        gap: var(--spacing-6);
     }
     
     .footer-content {
